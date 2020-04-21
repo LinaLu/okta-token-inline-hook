@@ -1,0 +1,25 @@
+{
+   "commands": 
+     [ 
+        { 
+            "type": "com.okta.identity.patch",
+            "value": [ 
+                 { 
+                     "op": "replace",
+                     "path": "/token/lifetime/expiration",
+                     "value": 300 
+                  }
+             ] 
+         }, 
+         { 
+             "type": "com.okta.access.patch",
+             "value": [
+                  { 
+                     "op": "replace",
+                     "path": "/token/lifetime/expiration",
+                     "value": 300 
+                   }
+              ] 
+          }
+      ]
+}
